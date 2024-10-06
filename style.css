@@ -1,0 +1,222 @@
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px; /* Reduces padding on smaller screens */
+    }
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    padding: 9px 5%;
+    border-bottom: 1px solid #f7f9fb;
+    transition: all .45s ease;
+}
+.logo{
+    color:#424242;
+    font-family: 'Dancing Script', cursive; 
+    font-weight: 800;
+    
+}
+.navbar{
+    display: flex;
+}
+.navbar a {
+font-size: var(--p-font);
+    color: var(--other-color);
+    font-weight: 400;
+    padding: 10px 25px;
+    margin: 0 5px;
+    text-decoration: none;
+   /* background-color: pink;*/
+}
+.navbar a:hover{
+    background-color: aliceblue;
+}
+.navbar a.active{
+    background-color: #f7f9fb;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+.icons i{
+    height: auto;
+    width: 50px;
+    background-color: #f7f9fb ;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 50%;
+    color:var(--other-color) ;
+    font-size: 22px;
+    margin-right: 25px;
+    margin-left: 10px;
+    transition: all .45 ease;
+}
+.icons i:hover{
+    transform: scale(0.9);
+
+}
+#menu-icon{
+    color: var(--other-color);
+    font-size: 33px;
+    z-index: 1001;
+    cursor: pointer;
+}
+section{
+    padding: 100px 11% 90px;
+}
+.home{
+    
+    padding: 100px 11% 90px;
+
+     background-size: cover; 
+    position: relative; 
+    display: grid ;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.home img{
+    width: 100%;
+    height: auto;
+ } 
+
+body{
+    background: linear-gradient(135deg, #c7f8ee, #f80e92, rgb(243, 205, 151));
+}
+.card {
+    margin: 20px;
+    
+}
+.card img {
+
+        width: 100%;         /* Make the image take up the full width of the card */
+        height: 250px;       /* Set a fixed height for all images */
+        object-fit:cover /* Ensures the image covers the space without distortion */
+      }
+      /* .card2 {
+        justify-content:space-evenly;
+      /* } */
+      header.sticky{
+        background:#f8e9f1;
+        padding:  20px 2%;
+      }
+      .btn-card{
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: pink;
+
+
+      }
+       .btn-card:hover { /*changes the color of the button  */
+        /* letter-spacing: 1px; /*makes it bigger when the cursor touches it */
+        color: var(--bg-color);
+        background-color: palevioletred;
+      }
+      .card:hover{
+          transform: translateY(15px);/* this controls how the card becomes bigger when you hover on it */
+           cursor: pointer; /* changes the cursor to hand */
+      } 
+    .like{
+        justify-content: space-around   ;
+    } 
+
+    .price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      
+      .rating i {
+        color: gold;
+        font-size: 1rem;
+      }
+/* .heart{
+    cursor: pointer;
+}
+
+      .heart.liked{
+    color: red;
+      }
+       */
+       .heart {
+        background-color: transparent;  /* Empty inside */
+
+    }
+
+
+    
+    .ggg.liked {
+        color: red;  /* Red fill for "liked" heart */
+        background-color: red;
+        
+    }
+    /* .ri-shopping-cart-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 7px;
+        width: 80px;
+
+    }
+    .ri-shopping-cart-line p{
+        height: 22px;
+        width: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    .root{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+    .sidebar{
+        width: 40px;
+        border-radius: 5px;
+        background-color: #c0b8bc;
+        margin-left: 20px;
+        padding: 15px;
+        text-align: center;
+    }
+    .ori{
+        background-color: #c7f8ee;
+        border-radius: 3px;
+        height: 40px;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .foot{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0px;
+        padding: 10px 0px;
+        border-top:  1px pink;
+    }
+    
+ */
